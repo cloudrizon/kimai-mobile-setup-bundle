@@ -1,0 +1,33 @@
+{
+    "name": "cloudrizon/kimai-mobile-setup",
+    "description": "Kimai Mobile Setup Plugin streamlines workspace setup in the Kimai Mobile app by creating QR codes for the generated API tokens.",
+    "homepage": "https://github.com/cloudrizon/kimai-mobile-setup-bundle",
+    "type": "kimai-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "kimai",
+        "kimai-plugin",
+        "kimai-mobile"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cloudrizon",
+            "homepage": "https://www.cloudrizon.com/"
+        }
+    ],
+    "extra": {
+        "kimai": {
+            "require": 21500,
+            "name": "Kimai Mobile Setup"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "KimaiPlugin\\KimaiMobileSetupBundle\\": ""
+        }
+    },
+    "require": {
+        "endroid/qr-code": "^4.8"
+    }
+}

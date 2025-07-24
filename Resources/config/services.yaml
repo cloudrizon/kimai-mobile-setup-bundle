@@ -1,0 +1,24 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    KimaiPlugin\KimaiMobileSetupBundle\:
+        resource: '../../*'
+        exclude:
+            - '../../Command/'
+            - '../../Configuration/'
+            - '../../Entity/'
+            - '../../Form/'
+            - '../../Invoice/'
+            - '../../Report/'
+            - '../../Repository/'
+            - '../../Migrations/'
+            - '../../Resources/'
+            - '../../Widget/'
+
+    KimaiPlugin\KimaiMobileSetupBundle\Controller\:
+        resource: '../../Controller'
+        tags: ['controller.service_arguments']
+
